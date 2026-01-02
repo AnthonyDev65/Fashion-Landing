@@ -1,0 +1,39 @@
+---
+const items = [
+    {
+        img: "/public/fav-00.png",
+        title: 'Trending on Instagram',
+        subtitle: 'Explore Now!',
+    },
+    {
+        img: "/public/fav-01.png",
+        title: 'All Under $40',
+        subtitle: 'Explore Now!',
+    },
+]
+---
+
+
+<section class="mt-32">
+    <h2 class="font-poppins font-black text-4xl mb-18 ml-22.5">Young's Favorite</h2>
+
+    <div class="grid grid-cols-[48.5%_48.5%] px-22.5 justify-between">
+        {items.map(item =>(
+            <div>
+                
+                <img src={item.img} alt="">
+
+                <div class="mt-[13.3px] flex items-center justify-between">
+                    <div>
+                        <h3 class="font-poppins text-[15.2px] font-medium text-[#191919]">{item.title}</p>
+                        <h4 class="font-poppins text-[11.4px] font-medium text-[#7f7f7f]">{item.subtitle}</p>
+                    </div>
+                    
+                    <i class="ri-arrow-right-long-line text-2xl text-[#7f7f7f] mr-0.5"></i>
+                </div>
+
+            </div>
+        ))}
+    </div>
+
+</section>

@@ -1,0 +1,46 @@
+---
+const cards  = [
+    {
+        title: "Hoddies & Sweatshirt",
+        subtitle: "Explore Now!",
+        image: "/public/01.png",
+    },
+    {
+        title: "Coats & Parkas",
+        subtitle: "Explore Now!",
+        image: "/public/02.png",
+    },
+    {
+        title: "Tees & T-Shirt",
+        subtitle: "Explore Now!",
+        image: "/public/03.png",
+    },
+    
+];  
+---
+
+<section class="mt-[32.65px] px-12 mb-30">
+    <h1 class="font-black text-[28.8px]">NEW ARRIVALS</h1> 
+
+    <div class="flex mt-[51.35px] justify-around"> 
+        
+        {cards.map(card => (
+
+            <div>
+
+                <img width="334px" src={card.image} alt="">
+
+                <div class="mt-[13.3px] flex items-center justify-between">
+                    <div>
+                        <h3 class="font-poppins text-[15.2px] font-medium text-[#191919]">{card.title}</h3>
+                        <h4 class="font-poppins text-[11.4px] font-medium text-[#7f7f7f]">{card.subtitle}</h4>
+                    </div>
+                    
+                    <i class="ri-arrow-right-long-line text-2xl text-[#7f7f7f] mr-0.5"></i>
+                </div>
+            </div>
+
+        ))}
+    </div>
+
+</section>
