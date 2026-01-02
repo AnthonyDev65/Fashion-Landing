@@ -1,3 +1,30 @@
-<section class="h-200">
+---
+import PlayStore from '../assets/downloadontheplaystore.svg'
+import AppStore from '../assets/downloadontheappstore.svg'
+import { App } from 'astro/app'
+
+---
+
+<section class="grid grid-col px-50 grid-cols-[50%_50%] mt-32">
+
+    <div class="flex flex-col justify-center">
+        <h2 class="font-poppins text-start text-[38px] font-black w-100">DOWNLOAD APP & GET THE VOUCHER!</h2>
+
+        <p class="font-poppins font-medium text-[#7c7c7c] w-75 mt-7.5">Get 30% off for first transaction using Rondovision mobile app for now.</p>
+
+        <div class="flex gap-x-4">
+            <button>
+                <PlayStore class="w-32 h-32"/>
+            </button>
+            <button>
+                <AppStore class="w-32 h-32"/>
+            </button>
+        </div>
+
+    </div>
+
+    <div>
+        <img height="720px" src="/public/mobile-voucher.png" alt="">
+    </div>
 
 </section>
