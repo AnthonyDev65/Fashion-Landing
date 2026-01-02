@@ -2,7 +2,7 @@
 import Logo from '../assets/favicon.svg';
 ---
 
-<header id="main-header" class="bg-white w-full flex justify-between px-12 py-5.75 fixed top-0">
+<header id="main-header" class="bg-white w-full flex justify-between px-12 py-5.75">
 
 	<div class="flex items-center gap-x-1.5">
 		<Logo class="w-[16.5px]"/>
@@ -24,16 +24,3 @@ import Logo from '../assets/favicon.svg';
 
 </header>
 
-<script>
-
-	document.addEventListener("DOMContentLoaded", () => {
-		const header = document.getElementById("main-header");
-		if (!header) return;
-
-	window.addEventListener("scroll", () => {
-		header.classList.toggle("shadow-sm", window.scrollY > 0);
-		
-		});
-	});
-
-</script>
