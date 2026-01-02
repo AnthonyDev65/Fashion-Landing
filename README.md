@@ -1,46 +1,51 @@
-# Astro Starter Kit: Basics
+# Fashion Basics - E-commerce Landing Page
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+Una landing page moderna y minimalista para una tienda de moda, construida con **Astro 5.0** y **Tailwind CSS 4.0**.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Tecnologías
 
-## 🚀 Project Structure
+Este proyecto utiliza las últimas tecnologías del ecosistema web para garantizar el mejor rendimiento:
 
-Inside of your Astro project, you'll see the following folders and files:
+- **Astro 5.0**: Framework web enfocado en la velocidad y optimización.
+- **Tailwind CSS 4.0**: Estilizado moderno y eficiente con el nuevo motor Oxide.
+- **Fontsource**: Gestión de tipografías locales para un mejor rendimiento (Inter).
+- **Remix Icons**: Iconografía versátil y escalable.
+
+## ✨ Características
+
+- **Zero JS por defecto**: Aprovecha la arquitectura de islas de Astro para un rendimiento superior.
+- **Diseño Responsive**: Totalmente adaptado a dispositivos móviles, tablets y escritorio.
+- **Componentización**: Estructura modular y limpia para facilitar el mantenimiento.
+- **Scroll Effects**: Cabecera dinámica que reacciona al desplazamiento del usuario.
+
+## 📁 Estructura del Proyecto
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+├── src/
+│   ├── assets/       # Imágenes y recursos estáticos
+│   ├── components/   # Componentes modulares (Hero, Brands, etc.)
+│   ├── layouts/      # Plantillas base (Layout.astro)
+│   ├── pages/        # Rutas y páginas principales (index.astro)
+│   └── styles/       # Configuración global y tokens de diseño
+├── public/           # Archivos estáticos servidos directamente
+└── astro.config.mjs  # Configuración del proyecto Astro
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Instalación y Desarrollo
 
-## 🧞 Commands
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [url-del-repo]
+   ```
+2. **Instalar dependencias:**
+   ```bash
+   pnpm install
+   ```
+3. **Iniciar el servidor de desarrollo:**
+   ```bash
+   pnpm run dev
+   ```
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
